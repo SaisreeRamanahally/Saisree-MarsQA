@@ -76,13 +76,13 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Education from excel sheet")]
+        [NUnit.Framework.DescriptionAttribute("01 Add Education from excel sheet")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddEducationFromExcelSheet()
+        public virtual void _01AddEducationFromExcelSheet()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Education from excel sheet", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Add Education from excel sheet", null, new string[] {
                         "mytag"});
 #line 10
 this.ScenarioInitialize(scenarioInfo);
@@ -112,13 +112,13 @@ testRunner.Given("the education data in excel sheet create education", ((string)
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Update Education")]
+        [NUnit.Framework.DescriptionAttribute("02 Update Education")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void UpdateEducation()
+        public virtual void _02UpdateEducation()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update Education", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Update Education", null, new string[] {
                         "mytag"});
 #line 14
 this.ScenarioInitialize(scenarioInfo);
@@ -148,13 +148,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Education")]
+        [NUnit.Framework.DescriptionAttribute("03 Delete Education")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void DeleteEducation()
+        public virtual void _03DeleteEducation()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Education", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Delete Education", null, new string[] {
                         "mytag"});
 #line 19
 this.ScenarioInitialize(scenarioInfo);
@@ -184,14 +184,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test Add Education sucessfully")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestAddEducationSucessfully()
+        [NUnit.Framework.DescriptionAttribute("04 Test Add Education sucessfully")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _04TestAddEducationSucessfully()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Add Education sucessfully", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Test Add Education sucessfully", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 25
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -239,15 +242,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Country is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenCountryIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("05 Test error message when Country is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _05TestErrorMessageWhenCountryIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Country is not entered", null, new string[] {
-                        "mytag"});
-#line 34
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test error message when Country is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 33
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -279,13 +285,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "M.B.A",
                             "2 years",
                             "2000"});
-#line 35
+#line 34
   testRunner.Given("The seller enters the following education data", ((string)(null)), table8, "Given ");
 #line hidden
-#line 38
+#line 37
        testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 39
+#line 38
        testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -294,15 +300,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when University is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenUniversityIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("06 Test error message when University is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _06TestErrorMessageWhenUniversityIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when University is not entered", null, new string[] {
-                        "mytag"});
-#line 43
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Test error message when University is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 42
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -334,13 +343,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "M.B.A",
                             "2 years",
                             "2000"});
-#line 44
+#line 43
   testRunner.Given("The seller enters the following education data", ((string)(null)), table9, "Given ");
 #line hidden
-#line 47
+#line 46
   testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 48
+#line 47
   testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -349,15 +358,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Title is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTitleIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("07 Test error message when Title is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _07TestErrorMessageWhenTitleIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Title is not entered", null, new string[] {
-                        "mytag"});
-#line 53
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Test error message when Title is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 52
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -389,13 +401,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "",
                             "2 years",
                             "2000"});
-#line 54
+#line 53
   testRunner.Given("The seller enters the following education data", ((string)(null)), table10, "Given ");
 #line hidden
-#line 57
+#line 56
   testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 58
+#line 57
   testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -404,15 +416,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Degree is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenDegreeIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("08 Test error message when Degree is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _08TestErrorMessageWhenDegreeIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Degree is not entered", null, new string[] {
-                        "mytag"});
-#line 62
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Test error message when Degree is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 61
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -444,13 +459,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "M.B.A",
                             "",
                             "2000"});
-#line 63
+#line 62
   testRunner.Given("The seller enters the following education data", ((string)(null)), table11, "Given ");
 #line hidden
-#line 66
+#line 65
   testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 67
+#line 66
   testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -459,15 +474,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Graduation Year is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenGraduationYearIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("09 Test error message when Graduation Year is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _09TestErrorMessageWhenGraduationYearIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Graduation Year is not entered", null, new string[] {
-                        "mytag"});
-#line 72
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Test error message when Graduation Year is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 71
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -499,13 +517,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "M.B.A",
                             "2Years",
                             ""});
-#line 73
+#line 72
   testRunner.Given("The seller enters the following education data", ((string)(null)), table12, "Given ");
 #line hidden
-#line 76
+#line 75
        testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 77
+#line 76
        testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -514,17 +532,20 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when the same Country,University,Title,Degree and Graduation Y" +
-            "ear  is entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTheSameCountryUniversityTitleDegreeAndGraduationYearIsEntered()
+        [NUnit.Framework.DescriptionAttribute("10 Test error message when the same Country,University,Title,Degree and Graduatio" +
+            "n Year  is entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _10TestErrorMessageWhenTheSameCountryUniversityTitleDegreeAndGraduationYearIsEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when the same Country,University,Title,Degree and Graduation Y" +
-                    "ear  is entered", null, new string[] {
-                        "mytag"});
-#line 82
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Test error message when the same Country,University,Title,Degree and Graduatio" +
+                    "n Year  is entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 81
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -556,13 +577,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "M.B.A",
                             "2 years",
                             "2000"});
-#line 83
+#line 82
   testRunner.Given("The seller enters the following education data", ((string)(null)), table13, "Given ");
 #line hidden
-#line 86
+#line 85
         testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 87
+#line 86
        testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -571,15 +592,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test listing Education")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestListingEducation()
+        [NUnit.Framework.DescriptionAttribute("11 Test listing Education")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _11TestListingEducation()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test listing Education", null, new string[] {
-                        "mytag"});
-#line 92
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("11 Test listing Education", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 91
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -599,10 +623,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 94
+#line 93
   testRunner.When("the seller clicks on education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 95
+#line 94
   testRunner.Then("education page should display the list of educations that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -610,17 +634,20 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Country, University,Title,Degree and Graduation year is n" +
-            "ot entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenCountryUniversityTitleDegreeAndGraduationYearIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("12 Test error message when Country, University,Title,Degree and Graduation year i" +
+            "s not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _12TestErrorMessageWhenCountryUniversityTitleDegreeAndGraduationYearIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Country, University,Title,Degree and Graduation year is n" +
-                    "ot entered", null, new string[] {
-                        "mytag"});
-#line 99
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("12 Test error message when Country, University,Title,Degree and Graduation year i" +
+                    "s not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 98
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -652,13 +679,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "",
                             "",
                             ""});
-#line 100
+#line 99
   testRunner.Given("The seller do not enters the following education data", ((string)(null)), table14, "Given ");
 #line hidden
-#line 103
+#line 102
        testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 104
+#line 103
        testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
                         "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

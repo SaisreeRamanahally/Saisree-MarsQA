@@ -4,5 +4,5 @@
 	I want to be told the sum of two numbers
 
 @mytag
-Scenario: Login to website
+Scenario: 01 Login to website
 	Given I login to the website

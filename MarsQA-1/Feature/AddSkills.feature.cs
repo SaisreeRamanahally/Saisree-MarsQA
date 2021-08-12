@@ -76,13 +76,13 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add skills")]
+        [NUnit.Framework.DescriptionAttribute("01 Add skills")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddSkills()
+        public virtual void _01AddSkills()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add skills", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Add skills", null, new string[] {
                         "mytag"});
 #line 10
 this.ScenarioInitialize(scenarioInfo);
@@ -112,13 +112,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Skill from excel sheet")]
+        [NUnit.Framework.DescriptionAttribute("02 Add Skill from excel sheet")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddSkillFromExcelSheet()
+        public virtual void _02AddSkillFromExcelSheet()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Skill from excel sheet", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Add Skill from excel sheet", null, new string[] {
                         "mytag"});
 #line 14
 this.ScenarioInitialize(scenarioInfo);
@@ -148,13 +148,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Update Skills")]
+        [NUnit.Framework.DescriptionAttribute("03 Update Skills")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void UpdateSkills()
+        public virtual void _03UpdateSkills()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update Skills", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Update Skills", null, new string[] {
                         "mytag"});
 #line 19
 this.ScenarioInitialize(scenarioInfo);
@@ -184,13 +184,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Skills")]
+        [NUnit.Framework.DescriptionAttribute("04 Delete Skills")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void DeleteSkills()
+        public virtual void _04DeleteSkills()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Skills", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Delete Skills", null, new string[] {
                         "mytag"});
 #line 24
 this.ScenarioInitialize(scenarioInfo);
@@ -220,14 +220,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test Add Skills sucessfully")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestAddSkillsSucessfully()
+        [NUnit.Framework.DescriptionAttribute("05 Test Add Skills sucessfully")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _05TestAddSkillsSucessfully()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Add Skills sucessfully", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test Add Skills sucessfully", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 30
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -266,14 +269,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when level is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenLevelIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("06 Test error message when level is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _06TestErrorMessageWhenLevelIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when level is not entered", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Test error message when level is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 38
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -312,14 +318,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when skill is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenSkillIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("07 Test error message when skill is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _07TestErrorMessageWhenSkillIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when skill is not entered", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Test error message when skill is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 45
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -358,14 +367,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when the same skill is entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTheSameSkillIsEntered()
+        [NUnit.Framework.DescriptionAttribute("08 Test error message when the same skill is entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _08TestErrorMessageWhenTheSameSkillIsEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when the same skill is entered", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Test error message when the same skill is entered", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 52
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -404,15 +416,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when the same skill with different level is selected")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTheSameSkillWithDifferentLevelIsSelected()
+        [NUnit.Framework.DescriptionAttribute("09 Test error message when the same skill with different level is selected")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _09TestErrorMessageWhenTheSameSkillWithDifferentLevelIsSelected()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when the same skill with different level is selected", null, new string[] {
-                        "mytag"});
-#line 60
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Test error message when the same skill with different level is selected", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 59
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -432,16 +447,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 61
+#line 60
   testRunner.Given("seller enters already existing skill (i.e.C#)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 62
+#line 61
   testRunner.And("seller select level as intermediate from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 63
+#line 62
   testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 64
+#line 63
   testRunner.Then("Alert message \"Duplicate Data\" is displayed on top right of the application.skill" +
                         " shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -450,15 +465,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when the same skill and same level is entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTheSameSkillAndSameLevelIsEntered()
+        [NUnit.Framework.DescriptionAttribute("10 Test error message when the same skill and same level is entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _10TestErrorMessageWhenTheSameSkillAndSameLevelIsEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when the same skill and same level is entered", null, new string[] {
-                        "mytag"});
-#line 70
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Test error message when the same skill and same level is entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 68
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -478,16 +496,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 71
+#line 69
   testRunner.Given("seller enters already existing skill (i.e.Java)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 72
+#line 70
   testRunner.And("seller enters already existing level (i.e.Beginner) from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 73
+#line 71
   testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 74
+#line 72
   testRunner.Then("Alert message \"This skill is already exist in your skill list\" is displayed on to" +
                         "p right of the application.skill shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -496,15 +514,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test listing skills")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestListingSkills()
+        [NUnit.Framework.DescriptionAttribute("11 Test listing skills")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _11TestListingSkills()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test listing skills", null, new string[] {
-                        "mytag"});
-#line 79
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("11 Test listing skills", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 76
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -524,10 +545,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 81
+#line 78
   testRunner.When("the seller clicks on skill tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 82
+#line 79
   testRunner.Then("skills page should display the list of skills that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -535,15 +556,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when skill and level is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenSkillAndLevelIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("12 Test error message when skill and level is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _12TestErrorMessageWhenSkillAndLevelIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when skill and level is not entered", null, new string[] {
-                        "mytag"});
-#line 87
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("12 Test error message when skill and level is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 82
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -563,16 +587,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 88
+#line 83
   testRunner.Given("seller do not  enter value in skill text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 89
+#line 84
   testRunner.And("do not select level from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 90
+#line 85
   testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 91
+#line 86
   testRunner.Then("Alert message, \"Please enter skill and experience level\" is displayed on top righ" +
                         "t of the application. skill shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

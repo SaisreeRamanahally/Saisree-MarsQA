@@ -76,13 +76,13 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Certification from excel sheet")]
+        [NUnit.Framework.DescriptionAttribute("01 Add Certification from excel sheet")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddCertificationFromExcelSheet()
+        public virtual void _01AddCertificationFromExcelSheet()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Certification from excel sheet", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Add Certification from excel sheet", null, new string[] {
                         "mytag"});
 #line 11
  this.ScenarioInitialize(scenarioInfo);
@@ -112,13 +112,13 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Update Certification")]
+        [NUnit.Framework.DescriptionAttribute("02 Update Certification")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void UpdateCertification()
+        public virtual void _02UpdateCertification()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update Certification", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Update Certification", null, new string[] {
                         "mytag"});
 #line 15
 this.ScenarioInitialize(scenarioInfo);
@@ -148,13 +148,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Certification")]
+        [NUnit.Framework.DescriptionAttribute("03 Delete Certification")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void DeleteCertification()
+        public virtual void _03DeleteCertification()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Certification", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Delete Certification", null, new string[] {
                         "mytag"});
 #line 20
 this.ScenarioInitialize(scenarioInfo);
@@ -184,14 +184,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test Add Certification sucessfully")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestAddCertificationSucessfully()
+        [NUnit.Framework.DescriptionAttribute("04 Test Add Certification sucessfully")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _04TestAddCertificationSucessfully()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Add Certification sucessfully", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Test Add Certification sucessfully", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 26
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -235,14 +238,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when the same Certificate,From,and Year  is entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenTheSameCertificateFromAndYearIsEntered()
+        [NUnit.Framework.DescriptionAttribute("05 Test error message when the same Certificate,From,and Year  is entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _05TestErrorMessageWhenTheSameCertificateFromAndYearIsEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when the same Certificate,From,and Year  is entered", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test error message when the same Certificate,From,and Year  is entered", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 34
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -286,15 +292,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Certificate  is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenCertificateIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("06 Test error message when Certificate  is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _06TestErrorMessageWhenCertificateIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Certificate  is not entered", null, new string[] {
-                        "mytag"});
-#line 43
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Test error message when Certificate  is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 42
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -322,13 +331,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "",
                             "ISTQB",
                             "2021"});
-#line 44
+#line 43
  testRunner.Given("The seller enters the following Certification data", ((string)(null)), table3, "Given ");
 #line hidden
-#line 48
+#line 47
  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 49
+#line 48
  testRunner.Then("Alert message \"Please enter Certification Name,Certification from and Certificati" +
                         "on Year\" is displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -337,15 +346,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when From  is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenFromIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("07 Test error message when From  is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _07TestErrorMessageWhenFromIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when From  is not entered", null, new string[] {
-                        "mytag"});
-#line 53
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Test error message when From  is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 51
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -373,13 +385,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "Quality Analyst",
                             "",
                             "2021"});
-#line 54
+#line 52
  testRunner.Given("The seller enters the following Certification data", ((string)(null)), table4, "Given ");
 #line hidden
-#line 58
+#line 56
  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 59
+#line 57
  testRunner.Then("Alert message \"Please enter Certification Name,Certification from and Certificati" +
                         "on Year\" is displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -388,15 +400,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Year  is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenYearIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("08 Test error message when Year  is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _08TestErrorMessageWhenYearIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Year  is not entered", null, new string[] {
-                        "mytag"});
-#line 63
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Test error message when Year  is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 60
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -424,13 +439,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "Quality Analyst",
                             "ISTQB",
                             ""});
-#line 64
+#line 61
  testRunner.Given("The seller enters the following Certification data", ((string)(null)), table5, "Given ");
 #line hidden
-#line 68
+#line 65
  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 69
+#line 66
  testRunner.Then("Alert message \"Please enter Certification Name,Certification from and Certificati" +
                         "on Year\" is displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -439,15 +454,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test listing certification")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestListingCertification()
+        [NUnit.Framework.DescriptionAttribute("09 Test listing certification")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _09TestListingCertification()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test listing certification", null, new string[] {
-                        "mytag"});
-#line 73
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Test listing certification", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 70
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -467,10 +485,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 75
+#line 72
   testRunner.When("the seller clicks on certification tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 76
+#line 73
   testRunner.Then("certification page should display the list of certifications  that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -478,15 +496,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when Certificate, From and yesr  is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenCertificateFromAndYesrIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("10 Test error message when Certificate, From and yesr  is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _10TestErrorMessageWhenCertificateFromAndYesrIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when Certificate, From and yesr  is not entered", null, new string[] {
-                        "mytag"});
-#line 81
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Test error message when Certificate, From and yesr  is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
+#line 78
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -514,13 +535,13 @@ this.ScenarioInitialize(scenarioInfo);
                             "",
                             "",
                             ""});
-#line 82
+#line 79
  testRunner.Given("The seller enters the following Certification data", ((string)(null)), table6, "Given ");
 #line hidden
-#line 86
+#line 83
  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 87
+#line 84
  testRunner.Then("Alert message \"Please enter Certification Name,Certification from and Certificati" +
                         "on Year\" is displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

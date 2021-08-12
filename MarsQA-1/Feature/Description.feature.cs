@@ -76,13 +76,13 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add description")]
+        [NUnit.Framework.DescriptionAttribute("01 Add description")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddDescription()
+        public virtual void _01AddDescription()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add description", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Add description", null, new string[] {
                         "mytag"});
 #line 11
 this.ScenarioInitialize(scenarioInfo);
@@ -112,14 +112,17 @@ testRunner.Given("the description data in excel sheet create description", ((str
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("seller is able to add description text with exactly 600 characters.")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void SellerIsAbleToAddDescriptionTextWithExactly600Characters_()
+        [NUnit.Framework.DescriptionAttribute("02 seller is able to add description text with exactly 600 characters.")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _02SellerIsAbleToAddDescriptionTextWithExactly600Characters_()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("seller is able to add description text with exactly 600 characters.", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 seller is able to add description text with exactly 600 characters.", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -154,14 +157,17 @@ testRunner.Then("seller profile description should be saved succesfully", ((stri
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("seller is not allowed to add description text with more than 600 characters.")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void SellerIsNotAllowedToAddDescriptionTextWithMoreThan600Characters_()
+        [NUnit.Framework.DescriptionAttribute("03 seller is not allowed to add description text with more than 600 characters.")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _03SellerIsNotAllowedToAddDescriptionTextWithMoreThan600Characters_()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("seller is not allowed to add description text with more than 600 characters.", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 seller is not allowed to add description text with more than 600 characters.", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -193,14 +199,17 @@ testRunner.Then("seller is not allowed to add description text with more than 60
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("seller is able to add description text with lessthan 600 characters.")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void SellerIsAbleToAddDescriptionTextWithLessthan600Characters_()
+        [NUnit.Framework.DescriptionAttribute("04 seller is able to add description text with lessthan 600 characters.")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _04SellerIsAbleToAddDescriptionTextWithLessthan600Characters_()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("seller is able to add description text with lessthan 600 characters.", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 seller is able to add description text with lessthan 600 characters.", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -235,14 +244,17 @@ testRunner.Then("seller profile description should be saved", ((string)(null)), 
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test error message when description is not entered")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void TestErrorMessageWhenDescriptionIsNotEntered()
+        [NUnit.Framework.DescriptionAttribute("05 Test error message when description is not entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _05TestErrorMessageWhenDescriptionIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test error message when description is not entered", null, new string[] {
-                        "mytag"});
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test error message when description is not entered", null, new string[] {
+                        "ignore",
+                        "web"});
 #line 37
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
