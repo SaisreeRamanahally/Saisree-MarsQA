@@ -1,0 +1,64 @@
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+      <Rule Match="Any">
+        <Rule Match="All">
+          <Property Name="Project" Value="MarsQA-1" />
+          <Rule Match="Any">
+            <Rule Match="All">
+              <Property Name="Namespace" Value="MarsQA_1.Feature" />
+              <Rule Match="Any">
+                <Rule Match="All">
+                  <Property Name="Class" Value="AddLanguageFeature" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="MarsQA_1.Feature.AddLanguageFeature.AddLanguage" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="AddLanguage" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="MarsQA_1.Feature.AddLanguageFeature.AddLanguageFromExcelSheet" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="AddLanguageFromExcelSheet" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+                <Rule Match="All">
+                  <Property Name="Class" Value="AddProfileEducationFeature" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="MarsQA_1.Feature.AddProfileEducationFeature.AddEducationFromExcelSheet" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="AddEducationFromExcelSheet" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+                <Rule Match="All">
+                  <Property Name="Class" Value="AddSkillsFeature" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="MarsQA_1.Feature.AddSkillsFeature.AddSkillFromExcelSheet" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="AddSkillFromExcelSheet" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="MarsQA_1.Feature.AddSkillsFeature.AddSkills" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="AddSkills" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
