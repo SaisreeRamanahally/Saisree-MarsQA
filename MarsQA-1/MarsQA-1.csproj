@@ -162,12 +162,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature\AddProfileCertification.cs" />
-    <Compile Include="Feature\AddProfileEducation.cs" />
-    <Compile Include="Feature\AddProfileLanguage.cs" />
-    <Compile Include="Feature\AddSkills.cs" />
-    <Compile Include="Feature\DescriptionPages.cs" />
-    <Compile Include="Feature\Login.cs" />
+    <Compile Include="StepsDefinition\AddProfileCertification.cs" />
+    <Compile Include="StepsDefinition\AddProfileEducation.cs" />
+    <Compile Include="StepsDefinition\AddProfileLanguage.cs" />
+    <Compile Include="StepsDefinition\AddSkills.cs" />
+    <Compile Include="StepsDefinition\DescriptionPages.cs" />
+    <Compile Include="StepsDefinition\Login.cs" />
     <Compile Include="Hooks\Hooks.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
     <Compile Include="SpecflowPages\Helpers\ConstantHelpers.cs" />

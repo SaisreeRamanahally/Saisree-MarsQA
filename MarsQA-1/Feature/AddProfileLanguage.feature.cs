@@ -76,16 +76,16 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("02 Add Language")]
+        [NUnit.Framework.DescriptionAttribute("01 Test Add Language sucessfully")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void _02AddLanguage()
+        public virtual void _01TestAddLanguageSucessfully()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Add Language", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Test Add Language sucessfully", null, new string[] {
                         "mytag"});
 #line 10
-this.ScenarioInitialize(scenarioInfo);
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -105,23 +105,33 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 11
-      testRunner.Given("I able to add language to the profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("seller enter language as \"English\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 Add Language from excel sheet")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void _01AddLanguageFromExcelSheet()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Add Language from excel sheet", null, new string[] {
-                        "mytag"});
+#line 12
+  testRunner.And("select level as \"Basic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 13
+  testRunner.When("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 14
-this.ScenarioInitialize(scenarioInfo);
+  testRunner.Then("Language should be added to your profile. The alert message, \"English has been ad" +
+                        "ded to your languages\" will be displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("02 Test Update Language sucessfully")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void _02TestUpdateLanguageSucessfully()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "mytag"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Test Update Language sucessfully", null, new string[] {
+                        "mytag"});
+#line 17
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -140,60 +150,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 15
-      testRunner.Given("the language data in excel sheet create language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("03 Update Language")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void _03UpdateLanguage()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Update Language", null, new string[] {
-                        "mytag"});
 #line 18
-this.ScenarioInitialize(scenarioInfo);
+  testRunner.Given("seller updates language as \"Maori\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
 #line 19
-      testRunner.Given("I able to update language details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.And("updates level as \"Fluent\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+  testRunner.When("clicks on Update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 21
+  testRunner.Then("Language should be updated. The alert message, \"Maori has been updated to your la" +
+                        "nguages\" will be displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04 Delete Language")]
+        [NUnit.Framework.DescriptionAttribute("03 Test Delete Language sucessfully")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void _04DeleteLanguage()
+        public virtual void _03TestDeleteLanguageSucessfully()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Delete Language", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Test Delete Language sucessfully", null, new string[] {
                         "mytag"});
-#line 23
-this.ScenarioInitialize(scenarioInfo);
+#line 24
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -212,23 +196,27 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 24
-      testRunner.Given("I able to delete language details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 25
+  testRunner.When("Seller select to delete language \"Maori\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 26
+  testRunner.Then("Language should be deleted. The alert message, \"Maori has been deleted from your " +
+                        "languages\" will be displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("05 Test Add Language sucessfully")]
+        [NUnit.Framework.DescriptionAttribute("04 Test error message when level is not entered")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _05TestAddLanguageSucessfully()
+        public virtual void _04TestErrorMessageWhenLevelIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test Add Language sucessfully", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Test error message when level is not entered", null, new string[] {
                         "ignore",
                         "web"});
 #line 29
@@ -252,32 +240,32 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 30
-  testRunner.Given("seller enter language as English", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("seller enter language as \"Maori\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 31
-  testRunner.And("select level as Basic from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("do not select level from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 32
-  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 33
-  testRunner.Then("Language should be added to your profile. The alert message, \"English has been ad" +
-                        "ded to your languages\" will be displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("Alert message, \"Please enter language and level\" is displayed on top right of the" +
+                        " application. Language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("06 Test error message when level is not entered")]
+        [NUnit.Framework.DescriptionAttribute("05 Test error message when language is not entered")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _06TestErrorMessageWhenLevelIsNotEntered()
+        public virtual void _05TestErrorMessageWhenLanguageIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Test error message when level is not entered", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Test error message when language is not entered", null, new string[] {
                         "ignore",
                         "web"});
 #line 36
@@ -301,32 +289,32 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 37
-  testRunner.Given("seller enter language as Maori", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("seller do not  enter value in language text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 38
-  testRunner.And("do not select level from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("select level as Fluent from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 39
-  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 40
-  testRunner.Then("Alert message, \"Please enter language and level\" is displayed on top right of the" +
-                        " application. Language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("The alert message \"Please enter language and level\" is displayed on top right of " +
+                        "the application and Language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("07 Test error message when language is not entered")]
+        [NUnit.Framework.DescriptionAttribute("06 Test error message when the same language is entered")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _07TestErrorMessageWhenLanguageIsNotEntered()
+        public virtual void _06TestErrorMessageWhenTheSameLanguageIsEntered()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Test error message when language is not entered", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Test error message when the same language is entered", null, new string[] {
                         "ignore",
                         "web"});
 #line 43
@@ -350,64 +338,15 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 44
-  testRunner.Given("seller do not  enter value in language text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("seller enters allready existing language (i.e.Maori)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 45
   testRunner.And("select level as Fluent from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 46
-  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 47
-  testRunner.Then("The alert message \"Please enter language and level\" is displayed on top right of " +
-                        "the application and Language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("08 Test error message when the same language is entered")]
-        [NUnit.Framework.CategoryAttribute("ignore")]
-        [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _08TestErrorMessageWhenTheSameLanguageIsEntered()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "ignore",
-                    "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Test error message when the same language is entered", null, new string[] {
-                        "ignore",
-                        "web"});
-#line 50
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 51
-  testRunner.Given("seller enters allready existing language (i.e.Maori)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 52
-  testRunner.And("select level as Fluent from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 53
-  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 54
   testRunner.Then("Alert message \"Duplicate Data\" is displayed on top right of the application.Langu" +
                         "age shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -416,18 +355,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("09 Test error message when the same language with different level is selected")]
+        [NUnit.Framework.DescriptionAttribute("07 Test error message when the same language with different level is selected")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _09TestErrorMessageWhenTheSameLanguageWithDifferentLevelIsSelected()
+        public virtual void _07TestErrorMessageWhenTheSameLanguageWithDifferentLevelIsSelected()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Test error message when the same language with different level is selected", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Test error message when the same language with different level is selected", null, new string[] {
                         "ignore",
                         "web"});
-#line 58
+#line 51
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -447,16 +386,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 59
+#line 52
   testRunner.Given("seller enters already existing language (i.e.Maori)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 60
+#line 53
   testRunner.And("seller select level as Basic from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 61
+#line 54
   testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 62
+#line 55
   testRunner.Then("Alert message \"Duplicate Data\" is displayed on top right of the application.Langu" +
                         "age shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -465,17 +404,59 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("10 Test AddNew action button is hidden when the seller add fourth language record" +
+        [NUnit.Framework.DescriptionAttribute("08 Test AddNew action button is hidden when the seller add fourth language record" +
             " sucessfully")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _10TestAddNewActionButtonIsHiddenWhenTheSellerAddFourthLanguageRecordSucessfully()
+        public virtual void _08TestAddNewActionButtonIsHiddenWhenTheSellerAddFourthLanguageRecordSucessfully()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Test AddNew action button is hidden when the seller add fourth language record" +
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Test AddNew action button is hidden when the seller add fourth language record" +
                     " sucessfully", "           Pre-Condition Three records already exists.", new string[] {
+                        "ignore",
+                        "web"});
+#line 59
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 61
+  testRunner.Given("seller adds fourth language record sucessfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 62
+  testRunner.Then("The Add action button is hidden.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("09 Test error message when the same language and same level is entered")]
+        [NUnit.Framework.CategoryAttribute("ignore")]
+        [NUnit.Framework.CategoryAttribute("web")]
+        public virtual void _09TestErrorMessageWhenTheSameLanguageAndSameLevelIsEntered()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore",
+                    "web"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Test error message when the same language and same level is entered", null, new string[] {
                         "ignore",
                         "web"});
 #line 66
@@ -498,29 +479,36 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 67
+  testRunner.Given("seller enters already existing language (i.e.English)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 68
-  testRunner.Given("seller adds fourth language record sucessfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.And("seller enters already existing level (i.e.Basic) from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 69
-  testRunner.Then("The Add action button is hidden.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 70
+  testRunner.Then("Alert message \"This language is already exist in your language list\" is displayed" +
+                        " on top right of the application.language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("11 Test error message when the same language and same level is entered")]
+        [NUnit.Framework.DescriptionAttribute("10 Test listing languages")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _11TestErrorMessageWhenTheSameLanguageAndSameLevelIsEntered()
+        public virtual void _10TestListingLanguages()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("11 Test error message when the same language and same level is entered", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Test listing languages", null, new string[] {
                         "ignore",
                         "web"});
-#line 74
+#line 73
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -541,58 +529,9 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 75
-  testRunner.Given("seller enters already existing language (i.e.English)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 76
-  testRunner.And("seller enters already existing level (i.e.Basic) from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 77
-  testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 78
-  testRunner.Then("Alert message \"This language is already exist in your language list\" is displayed" +
-                        " on top right of the application.language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("12 Test listing languages")]
-        [NUnit.Framework.CategoryAttribute("ignore")]
-        [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _12TestListingLanguages()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "ignore",
-                    "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("12 Test listing languages", null, new string[] {
-                        "ignore",
-                        "web"});
-#line 82
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 84
   testRunner.When("the seller clicks on languages tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 85
+#line 76
   testRunner.Then("languages page should display the list of languages that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -600,18 +539,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("13 Test error message when language and level is not entered")]
+        [NUnit.Framework.DescriptionAttribute("11 Test error message when language and level is not entered")]
         [NUnit.Framework.CategoryAttribute("ignore")]
         [NUnit.Framework.CategoryAttribute("web")]
-        public virtual void _13TestErrorMessageWhenLanguageAndLevelIsNotEntered()
+        public virtual void _11TestErrorMessageWhenLanguageAndLevelIsNotEntered()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "web"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("13 Test error message when language and level is not entered", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("11 Test error message when language and level is not entered", null, new string[] {
                         "ignore",
                         "web"});
-#line 90
+#line 79
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -631,16 +570,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 91
+#line 80
   testRunner.Given("seller do not  enter value in language text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 92
+#line 81
   testRunner.And("do not select level from dropdown box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 93
+#line 82
   testRunner.When("seller clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 94
+#line 83
   testRunner.Then("Alert message, \"Please enter language and level\" is displayed on top right of the" +
                         " application. Language shouldnot be added.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
