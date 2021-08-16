@@ -24,9 +24,12 @@ namespace MarsQA_1.SpecflowPages.Pages
         private static IWebElement CertifiedFromTextField => Driver.driver.FindElement(By.Name("certificationFrom"));
         private static IWebElement SelectYear => Driver.driver.FindElement(By.Name("certificationYear"));
         private static IWebElement AddButtonClick => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[3]/input[1]"));
-        private static IWebElement PopUpMessage => Driver.driver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
 
-     public void AddCertification()
+        private static string SucessOrFailureXpath = "//div[@class='ns-box-inner']";
+
+        private static IWebElement PopUpMessage => Driver.driver.FindElement(By.XPath(SucessOrFailureXpath));
+
+        public void AddCertification()
      {
             CertificationsTab.Click();
             AddNewButton.Click();
@@ -41,8 +44,8 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             AddButtonClick.Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             CertificationMessage = PopUpMessage.Text;
      }
@@ -72,8 +75,9 @@ namespace MarsQA_1.SpecflowPages.Pages
         Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody/tr/td/div/span/input[1]")).Click();
 
 
-        //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-        Thread.Sleep(2000);
+        WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+        wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
         //Assertion
         CertificationMessage = PopUpMessage.Text;
     }
@@ -88,8 +92,9 @@ namespace MarsQA_1.SpecflowPages.Pages
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody/tr/td[4]/span[2]/i")).Click();
 
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
             //Assertion
             CertificationMessage = PopUpMessage.Text;
 

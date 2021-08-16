@@ -25,9 +25,9 @@ namespace MarsQA_1.Pages
         private static IWebElement LevelSelectElement => Driver.driver.FindElement(By.Name("level"));
         private static IWebElement AddActionButton => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/div/div[3]/input[1]"));
 
-
+        private static string SucessOrFailureXpath = "//div[@class='ns-box-inner']";
         // common
-        private static IWebElement SucessOrFailure => Driver.driver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
+        private static IWebElement SucessOrFailure => Driver.driver.FindElement(By.XPath(SucessOrFailureXpath));
 
         public void AddLanguage()
         {
@@ -53,8 +53,10 @@ namespace MarsQA_1.Pages
             // click Add action button
             AddActionButton.Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;
@@ -88,8 +90,8 @@ namespace MarsQA_1.Pages
             // Click the update button
             UpdateButton.Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;
@@ -102,8 +104,8 @@ namespace MarsQA_1.Pages
             // Find xpath for delete/(cross) mark symbol 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody/tr/td[3]/span[2]/i")).Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;

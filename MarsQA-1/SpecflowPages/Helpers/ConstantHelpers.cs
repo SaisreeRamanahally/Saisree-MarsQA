@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,15 @@ namespace MarsQA_1.Helpers
         //Base Url
         public static string Url = "http://localhost:5000";
 
+        public static string projectrootdir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+
         //ScreenshotPath
-        public static string ScreenshotPath = "C:\\Saisree\\Testing\\Code\\MarsQACode\\MarsQA-1\\TestReports\\Screenshots\\Saisree\\";
+        public static string ScreenshotPath = projectrootdir + "\\TestReports\\Screenshots\\";
 
         //ExtentReportsPath
-        public static string ReportsPath = "C:\\Saisree\\Testing\\Code\\MarsQACode\\MarsQA-1\\TestReports\\Reports";
+        public static string ReportsPath = "";
 
         //ReportXML Path
-        public static string ReportXMLPath = "C:\\Saisree\\Testing\\Code\\MarsQACode\\MarsQA-1\\TestReports\\Reports";
+        public static string ReportXMLPath = "";
     }
 }

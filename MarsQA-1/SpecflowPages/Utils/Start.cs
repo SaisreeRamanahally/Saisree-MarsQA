@@ -3,7 +3,9 @@ using MarsQA_1.Pages;
 using RelevantCodes.ExtentReports;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using TechTalk.SpecFlow;
@@ -18,9 +20,11 @@ namespace MarsQA_1.Utils
         [BeforeScenario]
         public void Setup()
         {
+
+            string credentialsfile = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName + "\\SpecflowTests\\Data\\Mars.xlsx";
             //launch the browser
             Initialize();
-            ExcelLibHelper.PopulateInCollection(@"C:\Saisree\Testing\Code\MarsQACode\MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
+            ExcelLibHelper.PopulateInCollection(credentialsfile, "Credentials");
             
             //call the SignIn class
             SignIn.SigninStep();
@@ -43,5 +47,7 @@ namespace MarsQA_1.Utils
            // CommonMethods.Extent.Flush();
             
         }
+
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MarsQA_1.Helpers;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
         private static IWebElement DescriptionEditPen => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/div/h3/span/i"));
         private static IWebElement DescriptionTextArea => Driver.driver.FindElement(By.Name("value"));
-        private static IWebElement PopUpMessage => Driver.driver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
+
+        private static string SucessOrFailureXpath = "//div[@class='ns-box-inner']";
+
+        private static IWebElement PopUpMessage => Driver.driver.FindElement(By.XPath(SucessOrFailureXpath));
 
         public void AddDescription()
         {
@@ -33,8 +37,8 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/button")).Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             SuccessOrFailureMessage = PopUpMessage.Text;
 

@@ -22,7 +22,10 @@ namespace MarsQA_1.Pages
         private static IWebElement SkillTextBox => Driver.driver.FindElement(By.Name("name"));
         private static IWebElement LevelSelectElement => Driver.driver.FindElement(By.Name("level"));
         private static IWebElement AddButton => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/span/input[1]"));
-        private static IWebElement SucessOrFailure => Driver.driver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
+
+        private static string SucessOrFailureXpath = "//div[@class='ns-box-inner']";
+        // common
+        private static IWebElement SucessOrFailure => Driver.driver.FindElement(By.XPath(SucessOrFailureXpath));
 
         public void AddSkills()
         {
@@ -41,8 +44,8 @@ namespace MarsQA_1.Pages
 
             AddButton.Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             SkillMessage = SucessOrFailure.Text;    
 
@@ -69,8 +72,8 @@ namespace MarsQA_1.Pages
                         // find xpath for update action button and click
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/tbody/tr/td/div/span/input[1]")).Click();
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
             //Assertion
             SkillMessage = SucessOrFailure.Text;
@@ -91,8 +94,9 @@ namespace MarsQA_1.Pages
 
             //Assertion
 
-            //Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
             SkillMessage = SucessOrFailure.Text;
 
 
