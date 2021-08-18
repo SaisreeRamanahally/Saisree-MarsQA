@@ -33,14 +33,6 @@ mytag
 
 
 
-		Given The seller enters the following education data 
-				| Country    | University | Title | Degree  | Graduation Year |
-				| New Zeland |            | M.B.A | 2 years | 2000            |                             
-		When  clicks on 'Add' action button 
-		Then  Alert message "Please enter all the fields" is displayed on top right of the application.
-
-
-
 
 
 

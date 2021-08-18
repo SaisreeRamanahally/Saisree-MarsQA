@@ -218,28 +218,6 @@ namespace MarsQA_1.Feature
   testRunner.Then("Education should be deleted. The alert message, \"Education entry successfully rem" +
                         "oved\" will be displayed on top right of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Country",
-                            "University",
-                            "Title",
-                            "Degree",
-                            "Graduation Year"});
-                table1.AddRow(new string[] {
-                            "New Zeland",
-                            "",
-                            "M.B.A",
-                            "2 years",
-                            "2000"});
-#line 36
-  testRunner.Given("The seller enters the following education data", ((string)(null)), table1, "Given ");
-#line hidden
-#line 39
-  testRunner.When("clicks on \'Add\' action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 40
-  testRunner.Then("Alert message \"Please enter all the fields\" is displayed on top right of the appl" +
-                        "ication.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
