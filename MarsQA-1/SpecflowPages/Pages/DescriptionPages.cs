@@ -37,8 +37,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/button")).Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             SuccessOrFailureMessage = PopUpMessage.Text;
 

@@ -61,8 +61,10 @@ namespace MarsQA_1.SpecflowPages.Pages
             
            AddButton.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             EducationMessage = AlertBoxMessage.Text;
 
@@ -117,8 +119,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[3]/input[1]")).Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            //wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             EducationMessage = AlertBoxMessage.Text;
 
@@ -137,8 +141,10 @@ namespace MarsQA_1.SpecflowPages.Pages
             // Find xpath for delete/(cross) mark symbol 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[6]/span[2]/i")).Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             EducationMessage = AlertBoxMessage.Text;
 

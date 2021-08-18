@@ -44,8 +44,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             AddButtonClick.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             CertificationMessage = PopUpMessage.Text;
      }
@@ -75,11 +77,13 @@ namespace MarsQA_1.SpecflowPages.Pages
         Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody/tr/td/div/span/input[1]")).Click();
 
 
-        WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-        wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
-        //Assertion
-        CertificationMessage = PopUpMessage.Text;
+            Thread.Sleep(2000);
+
+            //Assertion
+            CertificationMessage = PopUpMessage.Text;
     }
 
     // Deleate a updated record
@@ -92,8 +96,10 @@ namespace MarsQA_1.SpecflowPages.Pages
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody/tr/td[4]/span[2]/i")).Click();
 
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             //Assertion
             CertificationMessage = PopUpMessage.Text;

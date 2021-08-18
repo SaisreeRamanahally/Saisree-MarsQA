@@ -53,10 +53,12 @@ namespace MarsQA_1.Pages
             // click Add action button
             AddActionButton.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //  WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
 
-            
+            Thread.Sleep(2000);
+
+
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;
@@ -90,8 +92,10 @@ namespace MarsQA_1.Pages
             // Click the update button
             UpdateButton.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;
@@ -104,8 +108,10 @@ namespace MarsQA_1.Pages
             // Find xpath for delete/(cross) mark symbol 
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody/tr/td[3]/span[2]/i")).Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            //wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             //read sucess or failure message
             LanguageMessage = SucessOrFailure.Text;

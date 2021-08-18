@@ -44,8 +44,10 @@ namespace MarsQA_1.Pages
 
             AddButton.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //  WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             SkillMessage = SucessOrFailure.Text;    
 
@@ -72,8 +74,10 @@ namespace MarsQA_1.Pages
                         // find xpath for update action button and click
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/tbody/tr/td/div/span/input[1]")).Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            // WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             //Assertion
             SkillMessage = SucessOrFailure.Text;
@@ -94,8 +98,10 @@ namespace MarsQA_1.Pages
 
             //Assertion
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+            //WebDriverWait wait = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
+            // wait.Until(ExpectedConditions.ElementExists(By.XPath(SucessOrFailureXpath)));
+
+            Thread.Sleep(2000);
 
             SkillMessage = SucessOrFailure.Text;
 
